@@ -5,6 +5,11 @@ from django.conf.urls.defaults import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'^$','event.views.default'),                   
+    url(r'^login/?$', 'users.views.twitter_login'),
+    url(r'^logout/?$', 'users.views.twitter_logout'),
+    url(r'^login/authenticated/?$', 'users.views.twitter_authenticated'),
+   
     # Examples:
     # url(r'^$', 'twevent.views.home', name='home'),
     # url(r'^twevent/', include('twevent.foo.urls')),
