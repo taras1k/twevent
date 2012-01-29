@@ -1,5 +1,3 @@
-{% if user.is_authenticated %} 
-	Hello {{ user.username }}
-{% else %}
-  <a href = '/login'>Login</a>
-{% endif %}
+{% load users_tags %}
+
+{% login_widget user %}
