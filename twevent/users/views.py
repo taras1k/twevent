@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import urllib
 import simplejson
 import random
@@ -79,6 +80,7 @@ def twitter_authenticated(request):
         # Save our permanent token and secret for later.
         profile = Profile()
         profile.user = user
+        profile.twitter_username = access_token['screen_name']
         profile.oauth_token = access_token['oauth_token']
         profile.oauth_secret = access_token['oauth_token_secret']
         profile.save()

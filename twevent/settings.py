@@ -121,6 +121,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'event',
     'users',
+    'yandex_maps',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -159,3 +160,5 @@ TWITTER_CONSUMER_SECRET_KEY = 'gNxZzG8GtwyWe15o5No915bA0Ujfasdaqs8DtpvY'
 TWITTER_REQUEST_TOKEN_URL = 'https://api.twitter.com/oauth/request_token'
 TWITTER_ACCESS_TOKEN_URL = 'https://api.twitter.com/oauth/access_token'
 TWITTER_AUTHORIZATION_URL = 'https://api.twitter.com/oauth/authenticate'
+
+YANDEX_MAPS_API_KEY = 'AOXWpU0BAAAArhPRQAIA7yNXX1BrM3tpqUGCNwpf354GMm8AAAAAAAAAAAAKQ_kTY9SJCbJK5dwxaO-8pejU5A=='

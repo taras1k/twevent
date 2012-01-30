@@ -9,6 +9,9 @@ urlpatterns = patterns('',
     url(r'^login/?$', 'users.views.twitter_login'),
     url(r'^logout/?$', 'users.views.twitter_logout'),
     url(r'^login/authenticated/?$', 'users.views.twitter_authenticated'),
+    
+    url(r'^event/', include('event.urls')),
+    
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': settings.MEDIA_ROOT, 'show_indexes':True}),
     # Examples:

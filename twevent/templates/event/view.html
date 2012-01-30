@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+{{event}}
+
+{% load yandex_maps_tags %}
+
+{% yandex_map event.address 300 400 %}
+
+{% endblock %}
