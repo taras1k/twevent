@@ -7,8 +7,13 @@ class Event(models.Model):
     name = models.CharField('Назва', max_length=200)
     date = models.DateField('Дата')
     address = models.CharField('Адреса', max_length=255, blank=True, null=True)
-    attendents = models.ManyToManyField(User)
+    attendents = models.ManyToManyField(User, through='Atendent')
     description = models.TextField('Опис', blank=True, null=True)
     
     def __unicode__(self):
         return self.name
+
+class Atendent(models.Model):
+    user = models.ForeignKey(User)
+    event = models.ForeignKey(Event, null=True, blank=True)
+    state = models.IntegerField(null=True, blank=True)

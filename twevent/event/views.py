@@ -12,6 +12,13 @@ from forms import EventForm
 from models import Event
 from django.shortcuts import get_object_or_404
 
+def _is_attending(user_id, event_id):
+    if Event.objects(id=event_id).filter(attendents__id=user_id) is None:
+        return False
+    return True
+    
+    
+
 def default(request):
     data = {}
     data['user'] = request.user
