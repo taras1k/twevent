@@ -7,7 +7,7 @@ class Event(models.Model):
     name = models.CharField('Назва', max_length=200)
     date = models.DateField('Дата')
     address = models.CharField('Адреса', max_length=255, blank=True, null=True)
-    attendents = models.ManyToManyField(User, through='Atendent')
+    attendents = models.ManyToManyField(User, through='Atendent', blank=True, null=True)
     description = models.TextField('Опис', blank=True, null=True)
     
     def __unicode__(self):

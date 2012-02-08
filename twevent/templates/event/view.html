@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
 {% block body %}
+</br>
+{{attanding_status}}
+{% for key, value in attending_menu.items %}
+ 	<a href = "/event/attend/{{event.id}}?status={{value.status}}">{{ value.name }}</a> 
+{% endfor %}
+</br>
 {{event}}
-
+</br>
 {% load yandex_maps_tags %}
 
 {% yandex_map event.address 300 400 %}
