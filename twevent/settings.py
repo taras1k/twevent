@@ -155,10 +155,10 @@ LOGIN_URL = '/login/'
 
 AUTH_PROFILE_MODULE = 'users.Profile'
 
-TWITTER_CONSUMER_KEY = 'OaVcWXFubxcsLM9BY23YDw'
-TWITTER_CONSUMER_SECRET_KEY = 'gNxZzG8GtwyWe15o5No915bA0Ujfasdaqs8DtpvY'
+TWITTER_CONSUMER_KEY = 'Your api key'
+TWITTER_CONSUMER_SECRET_KEY = 'Your api key'
 TWITTER_REQUEST_TOKEN_URL = 'https://api.twitter.com/oauth/request_token'
 TWITTER_ACCESS_TOKEN_URL = 'https://api.twitter.com/oauth/access_token'
 TWITTER_AUTHORIZATION_URL = 'https://api.twitter.com/oauth/authenticate'
 
-YANDEX_MAPS_API_KEY = 'AOXWpU0BAAAArhPRQAIA7yNXX1BrM3tpqUGCNwpf354GMm8AAAAAAAAAAAAKQ_kTY9SJCbJK5dwxaO-8pejU5A=='
+YANDEX_MAPS_API_KEY = 'Your api key'
